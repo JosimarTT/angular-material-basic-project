@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {MaterialModule} from "./modules/material/material.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 
 
@@ -13,6 +14,7 @@ import {MaterialModule} from "./modules/material/material.module";
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
+    FlexLayoutModule
   ],
   exports: [
     CommonModule,
@@ -20,7 +22,8 @@ import {MaterialModule} from "./modules/material/material.module";
     ReactiveFormsModule,
     RouterModule,
 
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule,
   ]
 })
 export class SharedModule { }
